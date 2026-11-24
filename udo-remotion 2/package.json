@@ -1,0 +1,22 @@
+{
+  "name": "udo-angol-reel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts UDO-Angol out/UDO_Angol_60fps.mp4 --codec=h264 --crf=16",
+    "still": "remotion still src/index.ts UDO-Angol out/portada.png --frame=120"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.448",
+    "@remotion/renderer": "4.0.448",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.448"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
