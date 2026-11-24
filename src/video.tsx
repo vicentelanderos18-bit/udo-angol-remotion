@@ -11,9 +11,8 @@ const pop = (f:number, fps:number, delay=0) => spring({frame:Math.max(0,f-delay)
 
 const LogoPlaceholder: React.FC<{light?:boolean}> = ({light=false}) => (
   <div style={{display:'flex',alignItems:'center',gap:16,width:'100%',maxWidth:875}}>
-    <div style={{width:54,height:54,flexShrink:0,borderRadius:14,border:`2px solid ${light?'#FFFFFF85':C.blue}`,display:'flex',alignItems:'center',justifyContent:'center',fontSize:16,fontWeight:800,color:light?C.white:C.blue}}>DEM</div>
+    <div style={{width:54,height:54,flexShrink:0,borderRadius:14,border:`2px solid ${light?'#FFFFFF85':C.blue}`,display:'flex',alignItems:'center',justifyContent:'center',fontSize:16,fontWeight:800,color:light?C.white:C.blue}}></div>
     <div style={{fontSize:23,fontWeight:760,lineHeight:1.22,letterSpacing:0.5,color:light?'#F6FBFF':C.navy,maxWidth:730}}>
-      DIRECCIÓN DE EDUCACIÓN<br/>MUNICIPAL DE ANGOL
     </div>
   </div>
 );
